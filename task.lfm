@@ -1,0 +1,693 @@
+object TaskForm: TTaskForm
+  Left = 916
+  Height = 240
+  Top = 337
+  Width = 487
+  BorderStyle = bsToolWindow
+  Caption = 'Zadanie'
+  ClientHeight = 240
+  ClientWidth = 487
+  FormStyle = fsSystemStayOnTop
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.4.4.0'
+  object TaskNotebook: TNotebook
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 487
+    PageIndex = 1
+    Align = alClient
+    TabOrder = 0
+    TabStop = True
+    object WordPage: TPage
+      object WordNotebook: TNotebook
+        Left = 0
+        Height = 240
+        Top = 0
+        Width = 487
+        PageIndex = 2
+        Align = alClient
+        TabOrder = 0
+        TabStop = True
+        object Level1: TPage
+          object WordLevel1: TGroupBox
+            Left = 5
+            Height = 230
+            Top = 5
+            Width = 477
+            Align = alClient
+            BorderSpacing.Around = 5
+            Caption = 'Slowo- poziom 1'
+            ClientHeight = 205
+            ClientWidth = 473
+            TabOrder = 0
+            OnClick = WordLevel1Click
+            object OptionsWord1: TComboBox
+              Left = 16
+              Height = 28
+              Top = 88
+              Width = 445
+              ItemHeight = 20
+              Style = csDropDownList
+              TabOrder = 0
+            end
+            object CheckWord1: TSpeedButton
+              Left = 72
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Sprawdź'
+              OnClick = CheckWord1Click
+            end
+            object PlWordLabel1: TStaticText
+              Left = 0
+              Height = 24
+              Top = 16
+              Width = 472
+              Alignment = taCenter
+              Caption = 'PlWordLabel1'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 1
+            end
+            object MeansLabel1: TStaticText
+              Left = 0
+              Height = 25
+              Top = 56
+              Width = 473
+              Alignment = taCenter
+              Caption = 'po angielsku znaczy'
+              TabOrder = 2
+            end
+            object CloseWord1: TSpeedButton
+              Left = 72
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Zamknij'
+              Visible = False
+              OnClick = CloseIdiom1Click
+            end
+            object AnsLabel1: TStaticText
+              Left = 0
+              Height = 24
+              Top = 168
+              Width = 473
+              Alignment = taCenter
+              Caption = 'AnsLabel1'
+              Color = clRed
+              Font.Style = [fsBold]
+              ParentFont = False
+              ParentColor = False
+              TabOrder = 3
+            end
+          end
+        end
+        object Level2: TPage
+          object WordLevel2: TGroupBox
+            Left = 10
+            Height = 220
+            Top = 10
+            Width = 467
+            Align = alClient
+            BorderSpacing.Around = 10
+            Caption = 'Slowo- poziom 2'
+            ClientHeight = 195
+            ClientWidth = 463
+            TabOrder = 0
+            object CheckWord2: TSpeedButton
+              Left = 64
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Sprawdź'
+              OnClick = CheckWord2Click
+            end
+            object PlWordLabel2: TStaticText
+              Left = 0
+              Height = 24
+              Top = 16
+              Width = 464
+              Alignment = taCenter
+              Caption = 'PlWordLabel'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 0
+            end
+            object MeansLabel2: TStaticText
+              Left = 0
+              Height = 25
+              Top = 56
+              Width = 465
+              Alignment = taCenter
+              Caption = 'po angielsku znaczy'
+              TabOrder = 1
+            end
+            object CloseWord2: TSpeedButton
+              Left = 64
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Zamknij'
+              Visible = False
+              OnClick = CloseIdiom1Click
+            end
+            object AnsLabel2: TStaticText
+              Left = 0
+              Height = 24
+              Top = 168
+              Width = 465
+              Alignment = taCenter
+              Caption = 'AnsLabel1'
+              Color = clRed
+              Font.Style = [fsBold]
+              ParentFont = False
+              ParentColor = False
+              TabOrder = 2
+            end
+            object WordEdit2: TEdit
+              Left = 16
+              Height = 28
+              Top = 88
+              Width = 424
+              Alignment = taCenter
+              OnChange = WordEdit2Change
+              TabOrder = 3
+            end
+          end
+        end
+        object Level3: TPage
+          object WordLevel3: TGroupBox
+            Left = 5
+            Height = 230
+            Top = 5
+            Width = 477
+            Align = alClient
+            BorderSpacing.Around = 5
+            Caption = 'Slowo- poziom 3'
+            ClientHeight = 205
+            ClientWidth = 473
+            TabOrder = 0
+            object WordPolecenie3: TStaticText
+              Left = 16
+              Height = 24
+              Top = 8
+              Width = 329
+              Caption = 'Uzupełnij według reguł:'
+              TabOrder = 0
+            end
+            object Wordlvl31: TStaticText
+              Left = 0
+              Height = 17
+              Top = 40
+              Width = 472
+              Alignment = taCenter
+              Caption = 'Wordlvl31'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 1
+            end
+            object wordoptions3: TComboBox
+              Left = 152
+              Height = 28
+              Top = 72
+              Width = 168
+              ItemHeight = 20
+              TabOrder = 2
+            end
+            object WordLvl33: TStaticText
+              Left = 0
+              Height = 17
+              Top = 104
+              Width = 472
+              Alignment = taCenter
+              Caption = 'WordLvl33'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 3
+            end
+            object AnsWord3: TStaticText
+              Left = 0
+              Height = 24
+              Top = 176
+              Width = 472
+              Alignment = taCenter
+              Caption = 'AnsWord3'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 4
+            end
+            object CheckWord3: TButton
+              Left = 96
+              Height = 25
+              Top = 136
+              Width = 275
+              Caption = 'Sprawdź'
+              OnClick = CheckWord3Click
+              TabOrder = 5
+            end
+            object WordLvl32: TStaticText
+              Left = 0
+              Height = 17
+              Top = 75
+              Width = 145
+              Alignment = taRightJustify
+              Caption = 'WordLvl32'
+              TabOrder = 6
+            end
+            object CloseWord3: TButton
+              Left = 96
+              Height = 25
+              Top = 136
+              Width = 275
+              Caption = 'Zamknij'
+              OnClick = CloseIdiom1Click
+              TabOrder = 7
+            end
+          end
+        end
+      end
+    end
+    object VerbPage: TPage
+      object VerbNotebook: TNotebook
+        Left = 0
+        Height = 240
+        Top = 0
+        Width = 487
+        PageIndex = 2
+        Align = alClient
+        TabOrder = 0
+        TabStop = True
+        object VerbLvl1: TPage
+          object VerbLevel1: TGroupBox
+            Left = 5
+            Height = 230
+            Top = 5
+            Width = 477
+            Align = alClient
+            BorderSpacing.Around = 5
+            Caption = 'Czasownik- poziom 1'
+            ClientHeight = 205
+            ClientWidth = 473
+            TabOrder = 0
+            OnClick = WordLevel1Click
+            object VerbOptions1: TComboBox
+              Left = 16
+              Height = 28
+              Top = 88
+              Width = 445
+              ItemHeight = 20
+              Style = csDropDownList
+              TabOrder = 0
+            end
+            object CheckVerb1: TSpeedButton
+              Left = 72
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Sprawdź'
+              OnClick = CheckVerb1Click
+            end
+            object PlVerbLabel1: TStaticText
+              Left = 0
+              Height = 24
+              Top = 16
+              Width = 472
+              Alignment = taCenter
+              Caption = 'PlWordLabel1'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 1
+            end
+            object MeansLabel3: TStaticText
+              Left = 0
+              Height = 25
+              Top = 56
+              Width = 473
+              Alignment = taCenter
+              Caption = 'po angielsku znaczy'
+              TabOrder = 2
+            end
+            object CloseVerb1: TSpeedButton
+              Left = 72
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Zamknij'
+              Visible = False
+              OnClick = CloseIdiom1Click
+            end
+            object VerbAnsLabel1: TStaticText
+              Left = 0
+              Height = 24
+              Top = 168
+              Width = 473
+              Alignment = taCenter
+              Caption = 'AnsLabel1'
+              Color = clRed
+              Font.Style = [fsBold]
+              ParentFont = False
+              ParentColor = False
+              TabOrder = 3
+            end
+          end
+        end
+        object VerbLvl2: TPage
+          object VerbLevel2: TGroupBox
+            Left = 10
+            Height = 220
+            Top = 10
+            Width = 467
+            Align = alClient
+            BorderSpacing.Around = 10
+            Caption = 'Czasownik- poziom 2'
+            ClientHeight = 195
+            ClientWidth = 463
+            TabOrder = 0
+            object CheckVerb2: TSpeedButton
+              Left = 64
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Sprawdź'
+              OnClick = CheckVerb2Click
+            end
+            object PlVerbLabel2: TStaticText
+              Left = 0
+              Height = 24
+              Top = 16
+              Width = 464
+              Alignment = taCenter
+              Caption = 'PlWordLabel'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 0
+            end
+            object MeansLabel4: TStaticText
+              Left = 0
+              Height = 25
+              Top = 56
+              Width = 465
+              Alignment = taCenter
+              Caption = 'po angielsku znaczy'
+              TabOrder = 1
+            end
+            object CloseVerb2: TSpeedButton
+              Left = 64
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Zamknij'
+              Visible = False
+              OnClick = CloseIdiom1Click
+            end
+            object VerbAnsLabel2: TStaticText
+              Left = 0
+              Height = 24
+              Top = 168
+              Width = 465
+              Alignment = taCenter
+              Caption = 'AnsLabel1'
+              Color = clRed
+              Font.Style = [fsBold]
+              ParentFont = False
+              ParentColor = False
+              TabOrder = 2
+            end
+            object VerbEdit2: TEdit
+              Left = 16
+              Height = 28
+              Top = 88
+              Width = 424
+              Alignment = taCenter
+              OnChange = WordEdit2Change
+              TabOrder = 3
+            end
+          end
+        end
+        object VerbLvl3: TPage
+          object VerbLevel3: TGroupBox
+            Left = 5
+            Height = 230
+            Top = 5
+            Width = 477
+            Align = alClient
+            BorderSpacing.Around = 5
+            Caption = 'Slowo- poziom 3'
+            ClientHeight = 205
+            ClientWidth = 473
+            TabOrder = 0
+            object VerbPolecenie3: TStaticText
+              Left = 16
+              Height = 24
+              Top = 8
+              Width = 329
+              Caption = 'Uzupełnij według reguł:'
+              TabOrder = 0
+            end
+            object VerbLvl31: TStaticText
+              Left = 0
+              Height = 17
+              Top = 40
+              Width = 472
+              Alignment = taCenter
+              Caption = 'Wordlvl31'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 1
+            end
+            object VerbOptions3: TComboBox
+              Left = 152
+              Height = 28
+              Top = 72
+              Width = 168
+              ItemHeight = 20
+              TabOrder = 2
+            end
+            object VerbLvl32: TStaticText
+              Left = 0
+              Height = 32
+              Top = 104
+              Width = 472
+              Alignment = taCenter
+              Caption = 'WordLvl33'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 3
+            end
+            object VerbAns3: TStaticText
+              Left = 0
+              Height = 24
+              Top = 176
+              Width = 472
+              Alignment = taCenter
+              Caption = 'AnsWord3'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 4
+            end
+            object CheckVerb3: TButton
+              Left = 96
+              Height = 25
+              Top = 136
+              Width = 275
+              Caption = 'Sprawdź'
+              OnClick = CheckVerb3Click
+              TabOrder = 5
+            end
+            object VerbLvl33: TStaticText
+              Left = 0
+              Height = 25
+              Top = 75
+              Width = 145
+              Alignment = taRightJustify
+              Caption = 'WordLvl32'
+              TabOrder = 6
+            end
+            object CloseVerb3: TButton
+              Left = 96
+              Height = 25
+              Top = 136
+              Width = 275
+              Caption = 'Zamknij'
+              OnClick = CloseIdiom1Click
+              TabOrder = 7
+            end
+          end
+        end
+      end
+    end
+    object IdiomPage: TPage
+      object IdiomNotebook: TNotebook
+        Left = 0
+        Height = 240
+        Top = 0
+        Width = 487
+        PageIndex = 0
+        Align = alClient
+        TabOrder = 0
+        TabStop = True
+        object IdiomLvl1: TPage
+          object IdiomPagelvl1: TGroupBox
+            Left = 5
+            Height = 230
+            Top = 5
+            Width = 477
+            Align = alClient
+            BorderSpacing.Around = 5
+            Caption = 'Idiom- poziom 1'
+            ClientHeight = 205
+            ClientWidth = 473
+            TabOrder = 0
+            object plLabel1: TStaticText
+              Left = 16
+              Height = 24
+              Top = 16
+              Width = 441
+              Alignment = taCenter
+              Caption = 'plLabel1'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 0
+            end
+            object MeansLabel0: TStaticText
+              Left = 16
+              Height = 25
+              Top = 56
+              Width = 441
+              Alignment = taCenter
+              Caption = 'po angielsku brzmi'
+              TabOrder = 1
+            end
+            object IdiomOptions: TComboBox
+              Left = 16
+              Height = 28
+              Top = 88
+              Width = 445
+              ItemHeight = 20
+              Style = csDropDownList
+              TabOrder = 2
+            end
+            object CheckIdiom1: TSpeedButton
+              Left = 72
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Sprawdź'
+              OnClick = CheckIdiom1Click
+            end
+            object AnsIdiomLabel1: TStaticText
+              Left = 16
+              Height = 24
+              Top = 168
+              Width = 441
+              Alignment = taCenter
+              Caption = 'AnsIdiomLabel1'
+              Color = clRed
+              Font.Style = [fsBold]
+              ParentFont = False
+              ParentColor = False
+              TabOrder = 3
+            end
+            object CloseIdiom1: TSpeedButton
+              Left = 72
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Zamknij'
+              Visible = False
+              OnClick = CloseIdiom1Click
+            end
+          end
+        end
+        object IdiomLvl2: TPage
+          object IdiomPageLvl2: TGroupBox
+            Left = 5
+            Height = 230
+            Top = 5
+            Width = 477
+            Align = alClient
+            BorderSpacing.Around = 5
+            Caption = 'Idiom- poziom 2'
+            ClientHeight = 205
+            ClientWidth = 473
+            TabOrder = 0
+            object CheckIdiom2: TSpeedButton
+              Left = 64
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Sprawdź'
+              OnClick = CheckIdiom2Click
+            end
+            object PlLabel2: TStaticText
+              Left = 0
+              Height = 24
+              Top = 16
+              Width = 464
+              Alignment = taCenter
+              Caption = 'PlWordLabel'
+              Font.Style = [fsBold]
+              ParentFont = False
+              TabOrder = 0
+            end
+            object MeansIdiomLabel2: TStaticText
+              Left = 0
+              Height = 25
+              Top = 56
+              Width = 465
+              Alignment = taCenter
+              Caption = 'po angielsku brzmi'
+              TabOrder = 1
+            end
+            object CloseIdiom2: TSpeedButton
+              Left = 64
+              Height = 22
+              Top = 128
+              Width = 329
+              Align = alCustom
+              Caption = 'Zamknij'
+              Visible = False
+              OnClick = CloseIdiom1Click
+            end
+            object AnsIdiomLabel2: TStaticText
+              Left = 0
+              Height = 24
+              Top = 168
+              Width = 465
+              Alignment = taCenter
+              Caption = 'AnsLabel1'
+              Color = clRed
+              Font.Style = [fsBold]
+              ParentFont = False
+              ParentColor = False
+              TabOrder = 2
+            end
+            object IdiomEdit2: TEdit
+              Left = 16
+              Height = 28
+              Top = 88
+              Width = 424
+              Alignment = taCenter
+              OnChange = IdiomEdit2Change
+              TabOrder = 3
+            end
+          end
+        end
+      end
+    end
+  end
+end

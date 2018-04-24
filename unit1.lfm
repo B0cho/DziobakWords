@@ -1,0 +1,1442 @@
+object MainSettings: TMainSettings
+  AnchorSideTop.Side = asrBottom
+  Left = 171
+  Height = 454
+  Top = 123
+  Width = 738
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'DziobakWords- ustawienia'
+  ClientHeight = 454
+  ClientWidth = 738
+  KeyPreview = True
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnKeyUp = FormKeyUp
+  LCLVersion = '1.4.4.0'
+  object MainNotebook: TNotebook
+    Left = 0
+    Height = 454
+    Top = 0
+    Width = 738
+    PageIndex = 1
+    Align = alClient
+    TabOrder = 0
+    TabStop = True
+    object MainPage: TPage
+      object zakladkiUstawienia: TPageControl
+        Left = 240
+        Height = 398
+        Top = 8
+        Width = 480
+        ActivePage = ZakladkaSlownik
+        Align = alCustom
+        BorderSpacing.Around = 10
+        TabIndex = 0
+        TabOrder = 0
+        object ZakladkaSlownik: TTabSheet
+          Caption = 'Slownik'
+          ClientHeight = 365
+          ClientWidth = 472
+          OnHide = ZakladkaSlownikHide
+          object SlownikNotebook: TNotebook
+            Left = 0
+            Height = 365
+            Top = 0
+            Width = 472
+            PageIndex = 0
+            Align = alClient
+            TabOrder = 0
+            TabStop = True
+            object LabelSlownikPage: TPage
+              object WybierzSlownikLabel: TStaticText
+                Left = 0
+                Height = 213
+                Top = 152
+                Width = 376
+                Align = alCustom
+                Alignment = taCenter
+                BorderSpacing.CellAlignHorizontal = ccaLeftTop
+                BorderSpacing.CellAlignVertical = ccaLeftTop
+                Caption = 'Wybierz lub dodaj nowy element z listy'
+                TabOrder = 0
+              end
+              object s2Picture: TImage
+                Left = 376
+                Height = 365
+                Top = 0
+                Width = 96
+                AntialiasingMode = amOn
+                Align = alRight
+                Center = True
+                Picture.Data = {
+                  0954474946496D616765500B000047494638396147001C01F70000484848FEFE
+                  FEBEBABB020202363636747474030303555555C8C4C53A3839514F50CBC7C828
+                  27272625250404040606063E3E3E0707074342421D1C1C403F3F2C2B2B050505
+                  0010061B1B1B0808082D2C2CFDFDFD4040401A1A1ABFBBBC1C1C1C09090915C7
+                  500A0A0A3B3B3B183F25338F513635353C3B3B4343430EC84B153B223F3F3F22
+                  C35711C84D2EB95C8181811D1D1DCAC6C74C4C4C37363635A55A34A459494949
+                  6E6E6EF1F1F1F5F5F52D76452D7444F2F2F2979797F4F4F40C0C0C9999993D3D
+                  3D5050504B4B4BD9D9D931864D2A2A2AC7C7C7313131272626B9B9B9545454BC
+                  B8B92FB95CB2AEAFC8C8C8C2C2C211C74DDADADA163B23A6A6A63030300F0F0F
+                  504E4F6D6D6DD1D1D101110610C84CABA9AA5353539E9E9E3937389F9F9F22C4
+                  572929295252520B0B0B4A4A4ABFBFBFF3F3F35757579A9A9AFCFAFB62626233
+                  8E51BABABAE1DFE0111111141213797979CECECE727272ACACAC909090E8E6E7
+                  464646E4E2E3414141808080EFEFEF9898984F4F4F4D4D4D6B6B6BABABAB7F7F
+                  7F5E5E5EEBEBEBF0F0F0373737302E2F4B494A5151515D5D5D9292920D0D0D5B
+                  5B5BEAEAEA3C3C3C31844C4E4C4D8787872E2E2E3A3A3A201E1FE9E9E91F1D1E
+                  717171282A29131112C2C0C1383838C4C0C1CCC8C9B3B3B3C1BDBED8D8D8CACA
+                  CA3B393AAAAAAA0100004E4E4E191919C9C5C60200017070705A5A5ACFCFCFC2
+                  BEBFC6C6C6C9C9C97E7E7E000100CCCACB424242888888676767ECEAEBC6C4C5
+                  525051EDEDED595959282828B4B4B4121212A5A5A56363630002015858584644
+                  4582828202C7430101011B1A1A000000FFFFFF00000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000002C00000000
+                  47001C010008FF008F091C48B0A0C18308132A5CC8B0A1C38710234A9C48B1A2
+                  C58B18336ADCC8B1A3C78F20438A3C164060C9911D4F465489F2614996075FB6
+                  5CC852264D9333156E2089B366C1973073FEC4C99360D08147850ADC29701014
+                  302F6ED0C2F2C20B145C43952604F5228FA901C6C28A3536A083AC1744886A35
+                  BACA971562C6E08E9D1BD6CA1A39595B9EE4114844DCBF72E98A854BE6D599A2
+                  4937B25452256C60C183E95651A2766480005E1ECC85FB18F2DFB00FC020B57C
+                  0C8883CD9E238F95EB0048CE3A9D39A7A61B18AEA2A221CD58800B5675E7D963
+                  2D9819890349D8DE9E2F2857AEBAB93124384096C4029C4409172186690FD1A4
+                  0489D5826F18FFB558F38966CF2A68B4D0CEBE7D8B1A539CC775F0842053893E
+                  BB38FE2C56078BF600B6C7C20E72C926D6183D6974C4038F1558440A0146A85D
+                  0A8FC4169605472426D14E05386620313B4028A18429EC009E63059064D34427
+                  6D10043105FEA5C27F238EC8427C270671DF453B11B1888783D550E390350846
+                  CC0F527004C86FC490B0DE9023B6F0DD7E8E8DC29130469600E5902540F6C231
+                  3B5A94086AC6B8B0658D4D402608511A1A04931FBF5D90DD991286708160A560
+                  A41200808975019D35DE49170017A914800C826901E88882CE55069B2B11B4C4
+                  6A70FDB968848D8E85E068F8F1842895C4C8792980760A2643A104D9009999A3
+                  B2E702643670FF6A119FA8B1D12A7B5DD246E846B4AA464214B74A09D9AE1AF5
+                  4AA53134DC4A8367C466C4277263A910C6A82CA8702C59C6348B119FE745468C
+                  0E5B2C9A820ECE69A6ED457C6660C089C61411EE9929140199011964CB119F0E
+                  30086A583A4C0BE580BFC5F58005F6F21A96BA7D02961EB012BEA742C0C43800
+                  4258E7CE1A17311393099775D8B117820BDE0149570472555C11ADC418E0576F
+                  3106A69C16CCC5881A19EB527CEF671644005CC0C7721601C125DF7CB1310EE8
+                  CC5FC2B5B10B630604B36C3245C6CE2742CD301ECDB3872A1B5075D0060F7D1C
+                  0816B07CA285A081805C604F4FC467C0393F20F66CC444F0B36C8FA52D51D474
+                  151D81D60D8AFF6580010F44A02FB342A79672E0033BB0AE030E5810B8055ACB
+                  2796DD11E1ED198C8CAFFBB701D002473944965FEEF5D584770DDCE9A87FFE50
+                  E822A37EBAEA0EB1EEFAEC05174BFBED83168E3BEEB03724FBB5BB8FD53B43BF
+                  07CFF3F00B151FFCB0BA2FEF3AF20A29EFFC5CD02724FDF493378FFD6CD52374
+                  FDF6DD1FF43DF6E11B34FEF4E517642CE9E06BBF7DE9B6CBFCBE60E913D42BFB
+                  ED9B0EFCFC36778D7FFEB66317FFB267BAFFA1CF7D03145EE1AA964005EAAF81
+                  D4432004EB3790B51D6D82126C200505723EE76DF0181D5CDE074318BC114290
+                  790FC41EE94CF83EFCB1106EDE325C6A5EE83ABADD8E862724600073E8C01DF2
+                  B07F3EFC210EFF7938C41C16F18447C4600A8D9841C9C9107ECE9A9F0B9B88BB
+                  1552917F49D4E015E797C504767180263410139788C42DBEEF850C2C231995B8
+                  43037AB0796EDC1D0BE32842388EB18D42BC99FCD818C51FEAB08FFB03A31901
+                  08483F7E118B83245F220FB8462D36D28B8B7CE3238D87C220123192759C2422
+                  35C9454C96D093720425EF44794352D2EE909DE4E4194D393B54AE529584DC96
+                  1FFF28CB59D6AE90797C201D4B59C040BE32807B84E41277F93C3D268C8FB524
+                  E628F5A7CC56B2B298B054A42EEF88CB4B1A4C8C6AB424356BD93A47E2D19ADA
+                  CC6635B7892E5BDE929B865C602E7DD84C68B2139CB86CE7EB9E993A7ACE339A
+                  8C0C2732CB29FFBADD1DAF896994A63E05F8C4ABB97267BE04E23851C724CFE9
+                  CE80BC69286AB8F64E6CA6CC710F1858C4E436B0CE6153A1DCFCE800721601C5
+                  D5064603C8D7DC90D6C33E32E901197000E93893B20CB8ED38C70A235D60EAD1
+                  FD30D040450BDB89E6781C62648064C11B400432F01B34C625A68351A603988A
+                  2DB81055A935834C1CA70A168ABA1463EB4AE3D5F0670010A0CD982595A76F8A
+                  464B7E3A4EAD90C92848CB3900B37E5485663B67394B9A50E7B1D584F5E261BD
+                  4C789A1C464CAF16832B420F2A5016E18684BB8B559B1E7207820A53234330E7
+                  A3C613A992E827980944046E2E2204270EB00FA81A88AA6CB9ABC9C6643499BD
+                  200487C01160FFF0D04068188D6B395B925498F312B28A94407A704C29F2870F
+                  2639C96EDD7484B0FED000AD30CA7265E5033128D648D832862E7230DA8A9444
+                  15B235AE3172D15DE19E840A86150B155292032324B03346F0416530425C1EF6
+                  002439D84478A7079742E460BA1071855FB67752118402C02E39861EDE6B8C17
+                  2038223E10825A3B2384C384642F908D0D0078305FC5F084109FA2645C64B007
+                  A5E0E0069DC3DD0DA253DE8FA8C4136288E15C48810AC11861176B0153491A31
+                  075E88542CBF60E01B0A50891C9764272521C22C263160DFC0C2182008422492
+                  6464DCA8240B699084082801871F64C2123FC00410B270E40EEB65BE25894302
+                  34E1042E3801FF019060044C1EECDD8604A0000988012B38F1894EDCE20039B6
+                  0F422E33900288E2141EF080001670054013BAC52869D39D13600B457B60010A
+                  0074A02182670408E0D398D6F4A61DD2E94F2F3AD3A37E48A9418DEA543764D5
+                  A716B5AB1502EB50CF9A21B56EF5AD13926B59EFDA20BDFE35AF13E06956FB5A
+                  D88526B6A96D8D6C602BDBD8CD7676B1631DED8204BBDAC99E36B3B17D8C6B73
+                  DBDBD80677B5C51D6D7237DBDCC846B7B0D5FD6B76EFDADDB786F7ACE5ED6A7A
+                  A7DADEA3C6F7A6F51D687EE7D8DF6B29C017A61D035D879BD88A1640C18F7D6E
+                  84439BDBDD7638B521DEE984339AE1E996F8B60F8E8084177C0910EFF6C04DBD
+                  F090FFC110B136608200988080601C02D9CA1D481B7AA1063BD4C20D78E0021D
+                  B0FD68CEF27C4521E7AD4F82CE5B88039DDB31A733D197CEF4A62B252000
+                }
+                Proportional = True
+                Stretch = True
+              end
+            end
+            object SlownikPage: TPage
+              object FormRadio: TRadioGroup
+                Left = 16
+                Height = 57
+                Top = 8
+                Width = 448
+                AutoFill = True
+                Caption = 'Typ'
+                ChildSizing.LeftRightSpacing = 6
+                ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+                ChildSizing.EnlargeVertical = crsHomogenousChildResize
+                ChildSizing.ShrinkHorizontal = crsScaleChilds
+                ChildSizing.ShrinkVertical = crsScaleChilds
+                ChildSizing.Layout = cclTopToBottomThenLeftToRight
+                ChildSizing.ControlsPerLine = 1
+                ClientHeight = 57
+                ClientWidth = 448
+                ColumnLayout = clVerticalThenHorizontal
+                Enabled = False
+                TabOrder = 0
+                object WordButton: TRadioButton
+                  Left = 6
+                  Height = 32
+                  Top = 0
+                  Width = 121
+                  Caption = 'Slowo'
+                  Checked = True
+                  OnClick = WordButtonClick
+                  TabOrder = 2
+                  TabStop = True
+                end
+                object VerbButton: TRadioButton
+                  Left = 127
+                  Height = 32
+                  Top = 0
+                  Width = 149
+                  Caption = 'Czasownik'
+                  OnClick = VerbButtonClick
+                  TabOrder = 0
+                end
+                object IdiomButton: TRadioButton
+                  Left = 276
+                  Height = 32
+                  Top = 0
+                  Width = 162
+                  Caption = 'Idiom/frazes'
+                  OnClick = IdiomButtonClick
+                  TabOrder = 1
+                end
+              end
+              object DictNotebook: TNotebook
+                AnchorSideLeft.Control = SlownikLista
+                AnchorSideLeft.Side = asrBottom
+                AnchorSideTop.Control = FormRadio
+                AnchorSideTop.Side = asrBottom
+                Left = 16
+                Height = 272
+                Top = 80
+                Width = 448
+                PageIndex = 0
+                Align = alCustom
+                Anchors = []
+                TabOrder = 1
+                TabStop = True
+                object IdiomPage: TPage
+                  object IdiomBox: TGroupBox
+                    Left = 0
+                    Height = 168
+                    Top = 0
+                    Width = 448
+                    Align = alTop
+                    Anchors = []
+                    Caption = 'Idiom/Frazes'
+                    ClientHeight = 168
+                    ClientWidth = 448
+                    Enabled = False
+                    TabOrder = 0
+                    OnExit = IdiomBoxExit
+                    object IdiomPl: TLabeledEdit
+                      Left = 16
+                      Height = 28
+                      Top = 32
+                      Width = 416
+                      AutoSize = False
+                      EditLabel.AnchorSideLeft.Control = IdiomPl
+                      EditLabel.AnchorSideRight.Control = IdiomPl
+                      EditLabel.AnchorSideRight.Side = asrBottom
+                      EditLabel.AnchorSideBottom.Control = IdiomPl
+                      EditLabel.Left = 16
+                      EditLabel.Height = 20
+                      EditLabel.Top = 9
+                      EditLabel.Width = 416
+                      EditLabel.Caption = 'Polski'
+                      EditLabel.ParentColor = False
+                      TabOrder = 0
+                      OnChange = IdiomPlChange
+                    end
+                    object IdiomAng: TLabeledEdit
+                      Left = 16
+                      Height = 28
+                      Top = 96
+                      Width = 416
+                      EditLabel.AnchorSideLeft.Control = IdiomAng
+                      EditLabel.AnchorSideRight.Control = IdiomAng
+                      EditLabel.AnchorSideRight.Side = asrBottom
+                      EditLabel.AnchorSideBottom.Control = IdiomAng
+                      EditLabel.Left = 16
+                      EditLabel.Height = 20
+                      EditLabel.Top = 73
+                      EditLabel.Width = 416
+                      EditLabel.Caption = 'Angielski:'
+                      EditLabel.ParentColor = False
+                      TabOrder = 1
+                      OnChange = IdiomPlChange
+                    end
+                  end
+                end
+                object WordPage: TPage
+                  object WordBox: TGroupBox
+                    Left = 0
+                    Height = 249
+                    Top = 0
+                    Width = 448
+                    Align = alTop
+                    Caption = 'Slowo'
+                    ClientHeight = 249
+                    ClientWidth = 448
+                    Enabled = False
+                    TabOrder = 0
+                    OnExit = WordBoxExit
+                    object WordPl: TLabel
+                      Left = 16
+                      Height = 20
+                      Top = 8
+                      Width = 38
+                      Caption = 'Polski'
+                      ParentColor = False
+                    end
+                    object WordAng: TLabel
+                      Left = 16
+                      Height = 20
+                      Top = 112
+                      Width = 63
+                      Caption = 'Angielski:'
+                      ParentColor = False
+                    end
+                    object WordPlCheck: TCheckBox
+                      Left = 32
+                      Height = 24
+                      Top = 72
+                      Width = 59
+                      Caption = 'L. mn'
+                      Checked = True
+                      OnClick = WordPlCheckClick
+                      State = cbChecked
+                      TabOrder = 1
+                    end
+                    object WordPlInputPlr: TEdit
+                      Left = 96
+                      Height = 28
+                      Top = 72
+                      Width = 239
+                      OnChange = WordPlSngEditingDone
+                      TabOrder = 2
+                    end
+                    object WordPlSng: TLabeledEdit
+                      Left = 96
+                      Height = 28
+                      Top = 32
+                      Width = 239
+                      EditLabel.AnchorSideTop.Control = WordPlSng
+                      EditLabel.AnchorSideTop.Side = asrCenter
+                      EditLabel.AnchorSideRight.Control = WordPlSng
+                      EditLabel.AnchorSideBottom.Control = WordPlSng
+                      EditLabel.AnchorSideBottom.Side = asrBottom
+                      EditLabel.Left = 55
+                      EditLabel.Height = 20
+                      EditLabel.Top = 36
+                      EditLabel.Width = 36
+                      EditLabel.Caption = 'L .poj'
+                      EditLabel.ParentColor = False
+                      LabelPosition = lpLeft
+                      LabelSpacing = 5
+                      TabOrder = 0
+                      OnChange = WordPlSngEditingDone
+                    end
+                    object WordAngInputPlr: TLabeledEdit
+                      Left = 96
+                      Height = 28
+                      Top = 176
+                      Width = 239
+                      EditLabel.AnchorSideTop.Control = WordAngInputPlr
+                      EditLabel.AnchorSideTop.Side = asrCenter
+                      EditLabel.AnchorSideRight.Control = WordAngInputPlr
+                      EditLabel.AnchorSideBottom.Control = WordAngInputPlr
+                      EditLabel.AnchorSideBottom.Side = asrBottom
+                      EditLabel.Left = 56
+                      EditLabel.Height = 20
+                      EditLabel.Top = 180
+                      EditLabel.Width = 35
+                      EditLabel.Caption = 'L. mn'
+                      EditLabel.ParentColor = False
+                      LabelPosition = lpLeft
+                      LabelSpacing = 5
+                      TabOrder = 5
+                      OnChange = WordPlSngEditingDone
+                    end
+                    object WordAngSng: TEdit
+                      Left = 160
+                      Height = 28
+                      Top = 136
+                      Width = 175
+                      OnChange = WordPlSngEditingDone
+                      TabOrder = 4
+                    end
+                    object Label1: TLabel
+                      Left = 47
+                      Height = 20
+                      Top = 144
+                      Width = 36
+                      Caption = 'L. poj'
+                      ParentColor = False
+                    end
+                    object WordPrefix: TComboBox
+                      Left = 99
+                      Height = 28
+                      Top = 136
+                      Width = 56
+                      ItemHeight = 20
+                      ItemIndex = 0
+                      Items.Strings = (
+                        'a'
+                        'an'
+                      )
+                      OnChange = WordPlSngEditingDone
+                      Style = csDropDownList
+                      TabOrder = 3
+                      Text = 'a'
+                    end
+                  end
+                end
+                object VerbPage: TPage
+                  object VerbBox: TGroupBox
+                    Left = 0
+                    Height = 272
+                    Top = 0
+                    Width = 448
+                    Align = alTop
+                    Caption = 'Czasownik'
+                    ClientHeight = 272
+                    ClientWidth = 448
+                    Enabled = False
+                    TabOrder = 0
+                    OnExit = VerbBoxExit
+                    object VerbPl: TLabeledEdit
+                      Left = 120
+                      Height = 28
+                      Top = 8
+                      Width = 263
+                      EditLabel.AnchorSideTop.Control = VerbPl
+                      EditLabel.AnchorSideTop.Side = asrCenter
+                      EditLabel.AnchorSideRight.Control = VerbPl
+                      EditLabel.AnchorSideBottom.Control = VerbPl
+                      EditLabel.AnchorSideBottom.Side = asrBottom
+                      EditLabel.Left = 26
+                      EditLabel.Height = 20
+                      EditLabel.Top = 12
+                      EditLabel.Width = 89
+                      EditLabel.Caption = 'Polski bezokl.'
+                      EditLabel.ParentColor = False
+                      LabelPosition = lpLeft
+                      LabelSpacing = 5
+                      TabOrder = 0
+                      OnChange = VerbPlEditingDone
+                    end
+                    object VerbAng1: TLabeledEdit
+                      Left = 168
+                      Height = 28
+                      Top = 80
+                      Width = 215
+                      EditLabel.AnchorSideTop.Control = VerbAng1
+                      EditLabel.AnchorSideTop.Side = asrCenter
+                      EditLabel.AnchorSideRight.Control = VerbAng1
+                      EditLabel.AnchorSideBottom.Control = VerbAng1
+                      EditLabel.AnchorSideBottom.Side = asrBottom
+                      EditLabel.Left = 28
+                      EditLabel.Height = 20
+                      EditLabel.Top = 84
+                      EditLabel.Width = 135
+                      EditLabel.Caption = 'Present Simple 1. os.'
+                      EditLabel.ParentColor = False
+                      LabelPosition = lpLeft
+                      LabelSpacing = 5
+                      TabOrder = 1
+                      OnChange = VerbPlEditingDone
+                    end
+                    object VerbAng2: TLabeledEdit
+                      Left = 168
+                      Height = 28
+                      Top = 112
+                      Width = 215
+                      EditLabel.AnchorSideTop.Control = VerbAng2
+                      EditLabel.AnchorSideTop.Side = asrCenter
+                      EditLabel.AnchorSideRight.Control = VerbAng2
+                      EditLabel.AnchorSideBottom.Control = VerbAng2
+                      EditLabel.AnchorSideBottom.Side = asrBottom
+                      EditLabel.Left = 28
+                      EditLabel.Height = 20
+                      EditLabel.Top = 116
+                      EditLabel.Width = 135
+                      EditLabel.Caption = 'Present Simple 3. os.'
+                      EditLabel.ParentColor = False
+                      LabelPosition = lpLeft
+                      LabelSpacing = 5
+                      TabOrder = 2
+                      OnChange = VerbPlEditingDone
+                    end
+                    object VerbAng3: TLabeledEdit
+                      Left = 152
+                      Height = 28
+                      Top = 144
+                      Width = 231
+                      EditLabel.AnchorSideTop.Control = VerbAng3
+                      EditLabel.AnchorSideTop.Side = asrCenter
+                      EditLabel.AnchorSideRight.Control = VerbAng3
+                      EditLabel.AnchorSideBottom.Control = VerbAng3
+                      EditLabel.AnchorSideBottom.Side = asrBottom
+                      EditLabel.Left = 29
+                      EditLabel.Height = 20
+                      EditLabel.Top = 148
+                      EditLabel.Width = 118
+                      EditLabel.Caption = 'Present Continous'
+                      EditLabel.ParentColor = False
+                      LabelPosition = lpLeft
+                      LabelSpacing = 5
+                      TabOrder = 3
+                      OnChange = VerbPlEditingDone
+                    end
+                    object VerbAng4: TLabeledEdit
+                      Left = 110
+                      Height = 28
+                      Top = 176
+                      Width = 273
+                      EditLabel.AnchorSideTop.Control = VerbAng4
+                      EditLabel.AnchorSideTop.Side = asrCenter
+                      EditLabel.AnchorSideRight.Control = VerbAng4
+                      EditLabel.AnchorSideBottom.Control = VerbAng4
+                      EditLabel.AnchorSideBottom.Side = asrBottom
+                      EditLabel.Left = 28
+                      EditLabel.Height = 20
+                      EditLabel.Top = 180
+                      EditLabel.Width = 77
+                      EditLabel.Caption = 'Past Simple'
+                      EditLabel.ParentColor = False
+                      LabelPosition = lpLeft
+                      LabelSpacing = 5
+                      TabOrder = 4
+                      OnChange = VerbPlEditingDone
+                    end
+                    object VerbAng5: TLabeledEdit
+                      Left = 110
+                      Height = 28
+                      Top = 208
+                      Width = 272
+                      EditLabel.AnchorSideTop.Control = VerbAng5
+                      EditLabel.AnchorSideTop.Side = asrCenter
+                      EditLabel.AnchorSideRight.Control = VerbAng5
+                      EditLabel.AnchorSideBottom.Control = VerbAng5
+                      EditLabel.AnchorSideBottom.Side = asrBottom
+                      EditLabel.Left = 28
+                      EditLabel.Height = 20
+                      EditLabel.Top = 212
+                      EditLabel.Width = 77
+                      EditLabel.Caption = 'Past Perfect'
+                      EditLabel.ParentColor = False
+                      LabelPosition = lpLeft
+                      LabelSpacing = 5
+                      TabOrder = 5
+                      OnChange = VerbPlEditingDone
+                    end
+                    object VerbCheck: TCheckBox
+                      Left = 16
+                      Height = 24
+                      Top = 46
+                      Width = 243
+                      Caption = 'Czasownik statyczny np. love, like'
+                      OnChange = VerbCheckChange
+                      TabOrder = 6
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+        object ZakladkaStats: TTabSheet
+          Caption = 'Statystyki'
+          ClientHeight = 365
+          ClientWidth = 472
+          object StatsNotebook: TNotebook
+            Left = 0
+            Height = 365
+            Top = 0
+            Width = 472
+            PageIndex = 0
+            Align = alClient
+            TabOrder = 0
+            TabStop = True
+            object LabelStatsPage: TPage
+              object WybierzStatsLabel: TStaticText
+                Left = 0
+                Height = 213
+                Top = 152
+                Width = 376
+                Align = alCustom
+                Alignment = taCenter
+                BorderSpacing.CellAlignHorizontal = ccaLeftTop
+                BorderSpacing.CellAlignVertical = ccaLeftTop
+                Caption = 'Wybierz lub dodaj nowy element z listy'
+                TabOrder = 0
+              end
+              object s3Picture: TImage
+                Left = 376
+                Height = 365
+                Top = 0
+                Width = 96
+                AntialiasingMode = amOn
+                Align = alRight
+                Center = True
+                Picture.Data = {
+                  0954474946496D616765500B000047494638396147001C01F70000484848FEFE
+                  FEBEBABB020202363636747474030303555555C8C4C53A3839514F50CBC7C828
+                  27272625250404040606063E3E3E0707074342421D1C1C403F3F2C2B2B050505
+                  0010061B1B1B0808082D2C2CFDFDFD4040401A1A1ABFBBBC1C1C1C09090915C7
+                  500A0A0A3B3B3B183F25338F513635353C3B3B4343430EC84B153B223F3F3F22
+                  C35711C84D2EB95C8181811D1D1DCAC6C74C4C4C37363635A55A34A459494949
+                  6E6E6EF1F1F1F5F5F52D76452D7444F2F2F2979797F4F4F40C0C0C9999993D3D
+                  3D5050504B4B4BD9D9D931864D2A2A2AC7C7C7313131272626B9B9B9545454BC
+                  B8B92FB95CB2AEAFC8C8C8C2C2C211C74DDADADA163B23A6A6A63030300F0F0F
+                  504E4F6D6D6DD1D1D101110610C84CABA9AA5353539E9E9E3937389F9F9F22C4
+                  572929295252520B0B0B4A4A4ABFBFBFF3F3F35757579A9A9AFCFAFB62626233
+                  8E51BABABAE1DFE0111111141213797979CECECE727272ACACAC909090E8E6E7
+                  464646E4E2E3414141808080EFEFEF9898984F4F4F4D4D4D6B6B6BABABAB7F7F
+                  7F5E5E5EEBEBEBF0F0F0373737302E2F4B494A5151515D5D5D9292920D0D0D5B
+                  5B5BEAEAEA3C3C3C31844C4E4C4D8787872E2E2E3A3A3A201E1FE9E9E91F1D1E
+                  717171282A29131112C2C0C1383838C4C0C1CCC8C9B3B3B3C1BDBED8D8D8CACA
+                  CA3B393AAAAAAA0100004E4E4E191919C9C5C60200017070705A5A5ACFCFCFC2
+                  BEBFC6C6C6C9C9C97E7E7E000100CCCACB424242888888676767ECEAEBC6C4C5
+                  525051EDEDED595959282828B4B4B4121212A5A5A56363630002015858584644
+                  4582828202C7430101011B1A1A000000FFFFFF00000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000002C00000000
+                  47001C010008FF008F091C48B0A0C18308132A5CC8B0A1C38710234A9C48B1A2
+                  C58B18336ADCC8B1A3C78F20438A3C164060C9911D4F465489F2614996075FB6
+                  5CC852264D9333156E2089B366C1973073FEC4C99360D08147850ADC29701014
+                  302F6ED0C2F2C20B145C43952604F5228FA901C6C28A3536A083AC1744886A35
+                  BACA971562C6E08E9D1BD6CA1A39595B9EE4114844DCBF72E98A854BE6D599A2
+                  4937B25452256C60C183E95651A2766480005E1ECC85FB18F2DFB00FC020B57C
+                  0C8883CD9E238F95EB0048CE3A9D39A7A61B18AEA2A221CD58800B5675E7D963
+                  2D9819890349D8DE9E2F2857AEBAB93124384096C4029C4409172186690FD1A4
+                  0489D5826F18FFB558F38966CF2A68B4D0CEBE7D8B1A539CC775F0842053893E
+                  BB38FE2C56078BF600B6C7C20E72C926D6183D6974C4038F1558440A0146A85D
+                  0A8FC4169605472426D14E05386620313B4028A18429EC009E63059064D34427
+                  6D10043105FEA5C27F238EC8427C270671DF453B11B1888783D550E390350846
+                  CC0F527004C86FC490B0DE9023B6F0DD7E8E8DC29130469600E5902540F6C231
+                  3B5A94086AC6B8B0658D4D402608511A1A04931FBF5D90DD991286708160A560
+                  A41200808975019D35DE49170017A914800C826901E88882CE55069B2B11B4C4
+                  6A70FDB968848D8E85E068F8F1842895C4C8792980760A2643A104D9009999A3
+                  B2E702643670FF6A119FA8B1D12A7B5DD246E846B4AA464214B74A09D9AE1AF5
+                  4AA53134DC4A8367C466C4277263A910C6A82CA8702C59C6348B119FE745468C
+                  0E5B2C9A820ECE69A6ED457C6660C089C61411EE9929140199011964CB119F0E
+                  30086A583A4C0BE580BFC5F58005F6F21A96BA7D02961EB012BEA742C0C43800
+                  4258E7CE1A17311393099775D8B117820BDE0149570472555C11ADC418E0576F
+                  3106A69C16CCC5881A19EB527CEF671644005CC0C7721601C125DF7CB1310EE8
+                  CC5FC2B5B10B630604B36C3245C6CE2742CD301ECDB3872A1B5075D0060F7D1C
+                  0816B07CA285A081805C604F4FC467C0393F20F66CC444F0B36C8FA52D51D474
+                  151D81D60D8AFF6580010F44A02FB342A79672E0033BB0AE030E5810B8055ACB
+                  2796DD11E1ED198C8CAFFBB701D002473944965FEEF5D584770DDCE9A87FFE50
+                  E822A37EBAEA0EB1EEFAEC05174BFBED83168E3BEEB03724FBB5BB8FD53B43BF
+                  07CFF3F00B151FFCB0BA2FEF3AF20A29EFFC5CD02724FDF493378FFD6CD52374
+                  FDF6DD1FF43DF6E11B34FEF4E517642CE9E06BBF7DE9B6CBFCBE60E913D42BFB
+                  ED9B0EFCFC36778D7FFEB66317FFB267BAFFA1CF7D03145EE1AA964005EAAF81
+                  D4432004EB3790B51D6D82126C200505723EE76DF0181D5CDE074318BC114290
+                  790FC41EE94CF83EFCB1106EDE325C6A5EE83ABADD8E862724600073E8C01DF2
+                  B07F3EFC210EFF7938C41C16F18447C4600A8D9841C9C9107ECE9A9F0B9B88BB
+                  1552917F49D4E015E797C504767180263410139788C42DBEEF850C2C231995B8
+                  43037AB0796EDC1D0BE32842388EB18D42BC99FCD818C51FEAB08FFB03A31901
+                  08483F7E118B83245F220FB8462D36D28B8B7CE3238D87C220123192759C2422
+                  35C9454C96D093720425EF44794352D2EE909DE4E4194D393B54AE529584DC96
+                  1FFF28CB59D6AE90797C201D4B59C040BE32807B84E41277F93C3D268C8FB524
+                  E628F5A7CC56B2B298B054A42EEF88CB4B1A4C8C6AB424356BD93A47E2D19ADA
+                  CC6635B7892E5BDE929B865C602E7DD84C68B2139CB86CE7EB9E993A7ACE339A
+                  8C0C2732CB29FFBADD1DAF896994A63E05F8C4ABB97267BE04E23851C724CFE9
+                  CE80BC69286AB8F64E6CA6CC710F1858C4E436B0CE6153A1DCFCE800721601C5
+                  D5064603C8D7DC90D6C33E32E901197000E93893B20CB8ED38C70A235D60EAD1
+                  FD30D040450BDB89E6781C62648064C11B400432F01B34C625A68351A603988A
+                  2DB81055A935834C1CA70A168ABA1463EB4AE3D5F0670010A0CD982595A76F8A
+                  464B7E3A4EAD90C92848CB3900B37E5485663B67394B9A50E7B1D584F5E261BD
+                  4C789A1C464CAF16832B420F2A5016E18684BB8B559B1E7207820A53234330E7
+                  A3C613A992E827980944046E2E2204270EB00FA81A88AA6CB9ABC9C6643499BD
+                  200487C01160FFF0D04068188D6B395B925498F312B28A94407A704C29F2870F
+                  2639C96EDD7484B0FED000AD30CA7265E5033128D648D832862E7230DA8A9444
+                  15B235AE3172D15DE19E840A86150B155292032324B03346F0416530425C1EF6
+                  002439D84478A7079742E460BA1071855FB67752118402C02E39861EDE6B8C17
+                  2038223E10825A3B2384C384642F908D0D0078305FC5F084109FA2645C64B007
+                  A5E0E0069DC3DD0DA253DE8FA8C4136288E15C48810AC11861176B0153491A31
+                  075E88542CBF60E01B0A50891C9764272521C22C263160DFC0C2182008422492
+                  6464DCA8240B699084082801871F64C2123FC00410B270E40EEB65BE25894302
+                  34E1042E3801FF019060044C1EECDD8604A0000988012B38F1894EDCE20039B6
+                  0F422E33900288E2141EF080001670054013BAC52869D39D13600B457B60010A
+                  0074A02182670408E0D398D6F4A61DD2E94F2F3AD3A37E48A9418DEA543764D5
+                  A716B5AB1502EB50CF9A21B56EF5AD13926B59EFDA20BDFE35AF13E06956FB5A
+                  D88526B6A96D8D6C602BDBD8CD7676B1631DED8204BBDAC99E36B3B17D8C6B73
+                  DBDBD80677B5C51D6D7237DBDCC846B7B0D5FD6B76EFDADDB786F7ACE5ED6A7A
+                  A7DADEA3C6F7A6F51D687EE7D8DF6B29C017A61D035D879BD88A1640C18F7D6E
+                  84439BDBDD7638B521DEE984339AE1E996F8B60F8E8084177C0910EFF6C04DBD
+                  F090FFC110B136608200988080601C02D9CA1D481B7AA1063BD4C20D78E0021D
+                  B0FD68CEF27C4521E7AD4F82CE5B88039DDB31A733D197CEF4A62B252000
+                }
+                Proportional = True
+                Stretch = True
+              end
+            end
+            object StatsPage: TPage
+              object GroupBox1: TGroupBox
+                Left = 0
+                Height = 365
+                Top = 0
+                Width = 472
+                Align = alClient
+                Caption = 'Statystyki'
+                ClientHeight = 365
+                ClientWidth = 472
+                TabOrder = 0
+                object QueryLabel: TLabel
+                  Left = 23
+                  Height = 24
+                  Top = 0
+                  Width = 89
+                  Anchors = []
+                  AutoSize = False
+                  Caption = 'Ilosc zapytan:'
+                  ParentColor = False
+                end
+                object CorrectLabel: TLabel
+                  AnchorSideLeft.Control = QueryLabel
+                  AnchorSideTop.Control = Correct
+                  AnchorSideRight.Control = Correct
+                  AnchorSideBottom.Control = Correct
+                  AnchorSideBottom.Side = asrBottom
+                  Left = 23
+                  Height = 20
+                  Top = 40
+                  Width = 201
+                  Anchors = []
+                  Caption = 'Ilosc poprawnych odpowiedzi:'
+                  ParentColor = False
+                end
+                object ProgressLabel: TLabel
+                  Left = 23
+                  Height = 20
+                  Top = 71
+                  Width = 45
+                  Caption = 'Postep'
+                  ParentColor = False
+                end
+                object ProgressBar: TProgressBar
+                  Left = 240
+                  Height = 20
+                  Top = 71
+                  Width = 201
+                  TabOrder = 0
+                end
+                object Correct: TStaticText
+                  AnchorSideLeft.Side = asrCenter
+                  Left = 376
+                  Height = 17
+                  Top = 40
+                  Width = 65
+                  Align = alCustom
+                  Alignment = taRightJustify
+                  Caption = 'Correct'
+                  TabOrder = 1
+                end
+                object StaticText3: TStaticText
+                  AnchorSideLeft.Control = CorrectLabel
+                  AnchorSideLeft.Side = asrCenter
+                  AnchorSideBottom.Control = CorrectLabel
+                  AnchorSideBottom.Side = asrBottom
+                  Left = 91
+                  Height = 0
+                  Top = 91
+                  Width = 65
+                  Caption = 'StaticText3'
+                  TabOrder = 2
+                end
+                object Query: TStaticText
+                  Left = 376
+                  Height = 24
+                  Top = 0
+                  Width = 65
+                  Alignment = taRightJustify
+                  Anchors = []
+                  Caption = 'Query'
+                  TabOrder = 3
+                end
+                object Progress: TStaticText
+                  Left = 184
+                  Height = 17
+                  Top = 71
+                  Width = 49
+                  Alignment = taRightJustify
+                  Caption = '0%'
+                  TabOrder = 4
+                end
+                object PoprawnoscLabel: TStaticText
+                  Left = 23
+                  Height = 17
+                  Top = 112
+                  Width = 112
+                  Caption = 'Poprawnosc:'
+                  TabOrder = 5
+                end
+                object TabelaPoprawnosc: TDrawGrid
+                  Left = 23
+                  Height = 176
+                  Top = 152
+                  Width = 418
+                  AutoEdit = False
+                  ColCount = 2
+                  Columns = <                  
+                    item
+                      ReadOnly = True
+                      Title.Caption = 'Data i godzina'
+                      Width = 322
+                    end                  
+                    item
+                      ReadOnly = True
+                      Title.Caption = 'Odp'
+                      Width = 70
+                    end>
+                  ExtendedSelect = False
+                  FixedCols = 0
+                  RowCount = 1
+                  ScrollBars = ssVertical
+                  TabOrder = 6
+                  OnDrawCell = TabelaPoprawnoscDrawCell
+                end
+              end
+            end
+          end
+        end
+        object ZakladkaRelacje: TTabSheet
+          Caption = 'Relacje'
+          ClientHeight = 365
+          ClientWidth = 472
+          OnHide = ZakladkaRelacjeHide
+          OnShow = ZakladkaRelacjeShow
+          object RelationsLabel2: TStaticText
+            AnchorSideTop.Control = RelationsWords
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = RelationLabel
+            AnchorSideBottom.Control = RelationsVerbs
+            Left = 216
+            Height = 21
+            Top = 202
+            Width = 45
+            Alignment = taCenter
+            AutoSize = True
+            BorderSpacing.Bottom = 150
+            BorderSpacing.CellAlignHorizontal = ccaCenter
+            BorderSpacing.CellAlignVertical = ccaCenter
+            Caption = 'można'
+            Color = clBlack
+            ParentColor = False
+            TabOrder = 2
+          end
+          object RelationsWords: TCheckListBox
+            Left = 312
+            Height = 264
+            Top = 80
+            Width = 140
+            ItemHeight = 0
+            OnClickCheck = RelationsWordsClickCheck
+            TabOrder = 1
+          end
+          object RelationLabel: TStaticText
+            Left = 0
+            Height = 60
+            Top = 20
+            Width = 472
+            Align = alTop
+            Alignment = taCenter
+            BorderSpacing.Top = 20
+            Caption = '... bo nie można zjeść tramwaju :)'#13#10'Logiczne dopasowanie czasowników z rzeczownikami'
+            TabOrder = 3
+          end
+          object RelationsVerbs: TListBox
+            Left = 16
+            Height = 264
+            Top = 80
+            Width = 140
+            ExtendedSelect = False
+            ItemHeight = 0
+            OnSelectionChange = RelationsVerbsSelectionChange
+            Sorted = True
+            TabOrder = 0
+          end
+        end
+        object ZakladkaHarm: TTabSheet
+          Caption = 'Harmonogram'
+          ClientHeight = 365
+          ClientWidth = 472
+          object HarmNotebook: TNotebook
+            Left = 0
+            Height = 365
+            Top = 0
+            Width = 472
+            PageIndex = 0
+            Align = alClient
+            TabOrder = 0
+            TabStop = True
+            object LabelHarmPage: TPage
+              object WybierzStatsLabel1: TStaticText
+                Left = 0
+                Height = 213
+                Top = 152
+                Width = 376
+                Align = alCustom
+                Alignment = taCenter
+                BorderSpacing.CellAlignHorizontal = ccaLeftTop
+                BorderSpacing.CellAlignVertical = ccaLeftTop
+                Caption = 'Wybierz lub dodaj nowy element z listy'
+                TabOrder = 0
+              end
+              object s3Picture1: TImage
+                Left = 376
+                Height = 365
+                Top = 0
+                Width = 96
+                AntialiasingMode = amOn
+                Align = alRight
+                Center = True
+                Picture.Data = {
+                  0954474946496D616765500B000047494638396147001C01F70000484848FEFE
+                  FEBEBABB020202363636747474030303555555C8C4C53A3839514F50CBC7C828
+                  27272625250404040606063E3E3E0707074342421D1C1C403F3F2C2B2B050505
+                  0010061B1B1B0808082D2C2CFDFDFD4040401A1A1ABFBBBC1C1C1C09090915C7
+                  500A0A0A3B3B3B183F25338F513635353C3B3B4343430EC84B153B223F3F3F22
+                  C35711C84D2EB95C8181811D1D1DCAC6C74C4C4C37363635A55A34A459494949
+                  6E6E6EF1F1F1F5F5F52D76452D7444F2F2F2979797F4F4F40C0C0C9999993D3D
+                  3D5050504B4B4BD9D9D931864D2A2A2AC7C7C7313131272626B9B9B9545454BC
+                  B8B92FB95CB2AEAFC8C8C8C2C2C211C74DDADADA163B23A6A6A63030300F0F0F
+                  504E4F6D6D6DD1D1D101110610C84CABA9AA5353539E9E9E3937389F9F9F22C4
+                  572929295252520B0B0B4A4A4ABFBFBFF3F3F35757579A9A9AFCFAFB62626233
+                  8E51BABABAE1DFE0111111141213797979CECECE727272ACACAC909090E8E6E7
+                  464646E4E2E3414141808080EFEFEF9898984F4F4F4D4D4D6B6B6BABABAB7F7F
+                  7F5E5E5EEBEBEBF0F0F0373737302E2F4B494A5151515D5D5D9292920D0D0D5B
+                  5B5BEAEAEA3C3C3C31844C4E4C4D8787872E2E2E3A3A3A201E1FE9E9E91F1D1E
+                  717171282A29131112C2C0C1383838C4C0C1CCC8C9B3B3B3C1BDBED8D8D8CACA
+                  CA3B393AAAAAAA0100004E4E4E191919C9C5C60200017070705A5A5ACFCFCFC2
+                  BEBFC6C6C6C9C9C97E7E7E000100CCCACB424242888888676767ECEAEBC6C4C5
+                  525051EDEDED595959282828B4B4B4121212A5A5A56363630002015858584644
+                  4582828202C7430101011B1A1A000000FFFFFF00000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000000000000000
+                  0000000000000000000000000000000000000000000000000000002C00000000
+                  47001C010008FF008F091C48B0A0C18308132A5CC8B0A1C38710234A9C48B1A2
+                  C58B18336ADCC8B1A3C78F20438A3C164060C9911D4F465489F2614996075FB6
+                  5CC852264D9333156E2089B366C1973073FEC4C99360D08147850ADC29701014
+                  302F6ED0C2F2C20B145C43952604F5228FA901C6C28A3536A083AC1744886A35
+                  BACA971562C6E08E9D1BD6CA1A39595B9EE4114844DCBF72E98A854BE6D599A2
+                  4937B25452256C60C183E95651A2766480005E1ECC85FB18F2DFB00FC020B57C
+                  0C8883CD9E238F95EB0048CE3A9D39A7A61B18AEA2A221CD58800B5675E7D963
+                  2D9819890349D8DE9E2F2857AEBAB93124384096C4029C4409172186690FD1A4
+                  0489D5826F18FFB558F38966CF2A68B4D0CEBE7D8B1A539CC775F0842053893E
+                  BB38FE2C56078BF600B6C7C20E72C926D6183D6974C4038F1558440A0146A85D
+                  0A8FC4169605472426D14E05386620313B4028A18429EC009E63059064D34427
+                  6D10043105FEA5C27F238EC8427C270671DF453B11B1888783D550E390350846
+                  CC0F527004C86FC490B0DE9023B6F0DD7E8E8DC29130469600E5902540F6C231
+                  3B5A94086AC6B8B0658D4D402608511A1A04931FBF5D90DD991286708160A560
+                  A41200808975019D35DE49170017A914800C826901E88882CE55069B2B11B4C4
+                  6A70FDB968848D8E85E068F8F1842895C4C8792980760A2643A104D9009999A3
+                  B2E702643670FF6A119FA8B1D12A7B5DD246E846B4AA464214B74A09D9AE1AF5
+                  4AA53134DC4A8367C466C4277263A910C6A82CA8702C59C6348B119FE745468C
+                  0E5B2C9A820ECE69A6ED457C6660C089C61411EE9929140199011964CB119F0E
+                  30086A583A4C0BE580BFC5F58005F6F21A96BA7D02961EB012BEA742C0C43800
+                  4258E7CE1A17311393099775D8B117820BDE0149570472555C11ADC418E0576F
+                  3106A69C16CCC5881A19EB527CEF671644005CC0C7721601C125DF7CB1310EE8
+                  CC5FC2B5B10B630604B36C3245C6CE2742CD301ECDB3872A1B5075D0060F7D1C
+                  0816B07CA285A081805C604F4FC467C0393F20F66CC444F0B36C8FA52D51D474
+                  151D81D60D8AFF6580010F44A02FB342A79672E0033BB0AE030E5810B8055ACB
+                  2796DD11E1ED198C8CAFFBB701D002473944965FEEF5D584770DDCE9A87FFE50
+                  E822A37EBAEA0EB1EEFAEC05174BFBED83168E3BEEB03724FBB5BB8FD53B43BF
+                  07CFF3F00B151FFCB0BA2FEF3AF20A29EFFC5CD02724FDF493378FFD6CD52374
+                  FDF6DD1FF43DF6E11B34FEF4E517642CE9E06BBF7DE9B6CBFCBE60E913D42BFB
+                  ED9B0EFCFC36778D7FFEB66317FFB267BAFFA1CF7D03145EE1AA964005EAAF81
+                  D4432004EB3790B51D6D82126C200505723EE76DF0181D5CDE074318BC114290
+                  790FC41EE94CF83EFCB1106EDE325C6A5EE83ABADD8E862724600073E8C01DF2
+                  B07F3EFC210EFF7938C41C16F18447C4600A8D9841C9C9107ECE9A9F0B9B88BB
+                  1552917F49D4E015E797C504767180263410139788C42DBEEF850C2C231995B8
+                  43037AB0796EDC1D0BE32842388EB18D42BC99FCD818C51FEAB08FFB03A31901
+                  08483F7E118B83245F220FB8462D36D28B8B7CE3238D87C220123192759C2422
+                  35C9454C96D093720425EF44794352D2EE909DE4E4194D393B54AE529584DC96
+                  1FFF28CB59D6AE90797C201D4B59C040BE32807B84E41277F93C3D268C8FB524
+                  E628F5A7CC56B2B298B054A42EEF88CB4B1A4C8C6AB424356BD93A47E2D19ADA
+                  CC6635B7892E5BDE929B865C602E7DD84C68B2139CB86CE7EB9E993A7ACE339A
+                  8C0C2732CB29FFBADD1DAF896994A63E05F8C4ABB97267BE04E23851C724CFE9
+                  CE80BC69286AB8F64E6CA6CC710F1858C4E436B0CE6153A1DCFCE800721601C5
+                  D5064603C8D7DC90D6C33E32E901197000E93893B20CB8ED38C70A235D60EAD1
+                  FD30D040450BDB89E6781C62648064C11B400432F01B34C625A68351A603988A
+                  2DB81055A935834C1CA70A168ABA1463EB4AE3D5F0670010A0CD982595A76F8A
+                  464B7E3A4EAD90C92848CB3900B37E5485663B67394B9A50E7B1D584F5E261BD
+                  4C789A1C464CAF16832B420F2A5016E18684BB8B559B1E7207820A53234330E7
+                  A3C613A992E827980944046E2E2204270EB00FA81A88AA6CB9ABC9C6643499BD
+                  200487C01160FFF0D04068188D6B395B925498F312B28A94407A704C29F2870F
+                  2639C96EDD7484B0FED000AD30CA7265E5033128D648D832862E7230DA8A9444
+                  15B235AE3172D15DE19E840A86150B155292032324B03346F0416530425C1EF6
+                  002439D84478A7079742E460BA1071855FB67752118402C02E39861EDE6B8C17
+                  2038223E10825A3B2384C384642F908D0D0078305FC5F084109FA2645C64B007
+                  A5E0E0069DC3DD0DA253DE8FA8C4136288E15C48810AC11861176B0153491A31
+                  075E88542CBF60E01B0A50891C9764272521C22C263160DFC0C2182008422492
+                  6464DCA8240B699084082801871F64C2123FC00410B270E40EEB65BE25894302
+                  34E1042E3801FF019060044C1EECDD8604A0000988012B38F1894EDCE20039B6
+                  0F422E33900288E2141EF080001670054013BAC52869D39D13600B457B60010A
+                  0074A02182670408E0D398D6F4A61DD2E94F2F3AD3A37E48A9418DEA543764D5
+                  A716B5AB1502EB50CF9A21B56EF5AD13926B59EFDA20BDFE35AF13E06956FB5A
+                  D88526B6A96D8D6C602BDBD8CD7676B1631DED8204BBDAC99E36B3B17D8C6B73
+                  DBDBD80677B5C51D6D7237DBDCC846B7B0D5FD6B76EFDADDB786F7ACE5ED6A7A
+                  A7DADEA3C6F7A6F51D687EE7D8DF6B29C017A61D035D879BD88A1640C18F7D6E
+                  84439BDBDD7638B521DEE984339AE1E996F8B60F8E8084177C0910EFF6C04DBD
+                  F090FFC110B136608200988080601C02D9CA1D481B7AA1063BD4C20D78E0021D
+                  B0FD68CEF27C4521E7AD4F82CE5B88039DDB31A733D197CEF4A62B252000
+                }
+                Proportional = True
+                Stretch = True
+              end
+            end
+            object HarmPage: TPage
+              object HarmBox: TGroupBox
+                Left = 16
+                Height = 272
+                Top = 88
+                Width = 441
+                Caption = 'Harmonogram'
+                ClientHeight = 272
+                ClientWidth = 441
+                TabOrder = 0
+                object HarmCalendar: TCalendar
+                  Left = 235
+                  Height = 205
+                  Top = 0
+                  Width = 190
+                  DateTime = 42023
+                  OnDayChanged = HarmCalendarDayChanged
+                  TabOrder = 0
+                end
+                object HarmList: TListBox
+                  Left = 16
+                  Height = 205
+                  Top = 0
+                  Width = 196
+                  ItemHeight = 0
+                  OnSelectionChange = HarmListSelectionChange
+                  TabOrder = 1
+                end
+                object HarmAdd: TButton
+                  Left = 16
+                  Height = 25
+                  Top = 216
+                  Width = 75
+                  Caption = 'Dodaj'
+                  Enabled = False
+                  OnClick = HarmAddClick
+                  TabOrder = 2
+                end
+                object HarmDelete: TButton
+                  Left = 137
+                  Height = 25
+                  Top = 216
+                  Width = 75
+                  Caption = 'Usuń'
+                  Enabled = False
+                  OnClick = HarmDeleteClick
+                  TabOrder = 3
+                end
+                object MinsEdit: TSpinEdit
+                  Left = 296
+                  Height = 28
+                  Top = 216
+                  Width = 82
+                  MaxValue = 1000
+                  MinValue = 1
+                  OnEditingDone = MinsEditEditingDone
+                  TabOrder = 4
+                  Value = 5
+                end
+                object PytajLabel: TStaticText
+                  Left = 232
+                  Height = 25
+                  Top = 219
+                  Width = 57
+                  Caption = 'Pytaj co'
+                  TabOrder = 5
+                end
+                object MinutLabel: TStaticText
+                  Left = 384
+                  Height = 25
+                  Top = 219
+                  Width = 41
+                  Caption = 'minut'
+                  TabOrder = 6
+                end
+              end
+              object PriorBox: TGroupBox
+                Left = 16
+                Height = 65
+                Top = 16
+                Width = 441
+                Caption = 'Priorytet'
+                ClientHeight = 65
+                ClientWidth = 441
+                TabOrder = 1
+                object PriorBar: TTrackBar
+                  Left = 0
+                  Height = 40
+                  Top = 0
+                  Width = 437
+                  Max = 4
+                  OnChange = PriorBarChange
+                  Position = 0
+                  Align = alClient
+                  TabOrder = 0
+                end
+              end
+            end
+          end
+        end
+      end
+      object StatusBar: TStatusBar
+        Left = 0
+        Height = 28
+        Top = 426
+        Width = 738
+        Panels = <        
+          item
+            Text = 'DziobakWords 1.0'
+            Width = 300
+          end        
+          item
+            Alignment = taRightJustify
+            Width = 50
+          end>
+        ParentBiDiMode = False
+        SimplePanel = False
+      end
+      object SlownikLista: TListBox
+        Left = 16
+        Height = 304
+        Top = 48
+        Width = 206
+        Align = alCustom
+        Anchors = []
+        BorderSpacing.Around = 10
+        ExtendedSelect = False
+        ItemHeight = 0
+        OnSelectionChange = SlownikListaSelectionChange
+        Sorted = True
+        TabOrder = 2
+      end
+      object SlownikSzukaj: TEdit
+        Left = 16
+        Height = 28
+        Hint = 'Hint'
+        Top = 10
+        Width = 206
+        Align = alCustom
+        Anchors = []
+        AutoSize = False
+        OnClick = SlownikSzukajClick
+        OnKeyPress = SlownikSzukajKeyPress
+        TabOrder = 3
+      end
+      object SlownikButtonNotebook: TNotebook
+        Left = 16
+        Height = 48
+        Top = 360
+        Width = 206
+        PageIndex = 0
+        Align = alCustom
+        TabOrder = 4
+        TabStop = True
+        object SlownikButtonNotebookNormal: TPage
+          object SlownikDodaj: TButton
+            Left = 0
+            Height = 40
+            Top = 2
+            Width = 94
+            Align = alCustom
+            BorderSpacing.Around = 10
+            Caption = 'Dodaj'
+            OnClick = SlownikDodajClick
+            TabOrder = 0
+          end
+          object SlownikUsun: TButton
+            AnchorSideLeft.Control = SlownikDodaj
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = SlownikDodaj
+            Left = 112
+            Height = 40
+            Top = 2
+            Width = 94
+            Anchors = []
+            Caption = 'Usuń'
+            Enabled = False
+            OnClick = SlownikUsunClick
+            TabOrder = 1
+          end
+        end
+        object SlownikButtonNotebookAdd: TPage
+          object SlownikZapisz: TButton
+            Left = 0
+            Height = 40
+            Top = 0
+            Width = 94
+            Align = alCustom
+            BorderSpacing.Around = 10
+            Caption = 'Zapisz'
+            Default = True
+            OnClick = SlownikZapiszClick
+            TabOrder = 0
+          end
+          object SlownikAnuluj: TButton
+            Left = 112
+            Height = 40
+            Top = 0
+            Width = 94
+            Align = alCustom
+            Cancel = True
+            Caption = 'Anuluj'
+            OnClick = SlownikAnulujClick
+            TabOrder = 1
+          end
+        end
+      end
+    end
+    object LockPage: TPage
+      Color = clWindow
+      object Image1: TImage
+        Left = 0
+        Height = 454
+        Top = 0
+        Width = 114
+        AntialiasingMode = amOn
+        Align = alLeft
+        Picture.Data = {
+          0954474946496D616765010B000047494638396147001C01F70000484848FEFE
+          FEBEBABB020202363636747474555555C8C4C53A3839030303514F50CBC7C828
+          27272625253E3E3E0404041D1C1C0606060707072C2B2B403F3F434242050505
+          1A1A1A1500000808081B1B1BFDFDFD434343BFBBBC363535404040090909F120
+          200A0A0A3B3B3B2D2C2C491616C43333FC0C0C3C3B3B3736364C17171801011C
+          1C1C818181AA32328B2C2CE02D2D4C4C4CFC0E0ECAC6C7494949F1F1F1F5F5F5
+          3F3F3F6E6E6E2726261D1D1DF2F2F2F4F4F44B4B4B0C0C0CFA1414979797FB0F
+          0F3D3D3D5050502A2A2A999999D9D9D9E12C2CC7C7C7F91313545454F3F3F3C2
+          C2C29E9E9E0F0F0F303030525252B9B9B9BCB8B99F9F9F6D6D6DC8C8C89D2F2F
+          504E4FABA9AAA93131393738B2AEAFA6A6A6BFBFBF9E30304A4A4A3C3C3C2929
+          29313131DADADAD1D1D10B0B0B5353537E7E7EC6C6C6C2C0C1ACACAC373737CC
+          C8C9989898424242E4E2E3525051EFEFEF282A29FD0B0BFA1212BABABA676767
+          9A9A9A828282808080020001CACACAE1DFE04F4F4F464646585858EBEBEB7272
+          726262628787874141415D5D5D121212CFCFCF010000797979C2BEBF6B6B6B8D
+          2C2CC632321311125A5A5A282828CCCACB4B494A707070717171191919451515
+          0002019292923B393A9090905B5B5BE9E9E9AAAAAAB4B4B48A2B2BC9C5C66363
+          63A5A5A5C1BDBE2E2E2E4D18188888885959593A3A3A7F7F7FD8D8D84644454E
+          4E4EC9C9C9F0F0F01111110001005E5E5E4E4C4DECEAEBC4C0C11F1D1EC6C4C5
+          FCFAFBABABAB0D0D0DE8E6E7EDEDED302E2F515151EAEAEA141213F91515B3B3
+          B34D4D4D575757383838CECECE201E1F0101011B1A1AFF0000000000FFFFFF00
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000002C00000000
+          47001C010008FF0097091C48B0A0C18308132A5CC8B0A1C38710234A9C48B1A2
+          C58B18336ADCC8B1A3C78F20438A5C164060C9911D4F465489F2614996075FB6
+          5CC852264D9333156E2089B366C1973073FEC4C99360D08147850ADC29101093
+          292D70D8A1D2A209935D43952654D58250A501CAC28A5536E0829B1646886A35
+          7A28949363CAE08E9D1BD689A062595B9EDC914A44DCBF72E98A855BE6CC92A2
+          4937B28CF2246C60C183E93E89A2766480004D22CC85FB18F2DFB011A620B5BC
+          ACC883CD9E238F95FBA0484E4D9D39A7A61B182EA6A221BB58800B56F5ECD416
+          BA8CAC21266CEFDFB31F8BA901B22415E4D021E3306AB16615CDD1B33B7E5085
+          2053893ECD38FFFEAC1DF263283D352289D0B97C6AB916902496B8B380E3F6EE
+          513B2E40D2E6C4931B08710C7EF909269710DF5DB49311B9DC572072C7F83006
+          47B810F8A07E7175C2111E1796D7C232095A544887DAC542D47C06C1248C8524
+          D2C50A462A0100588BB30170914A01C44023745F9CB812414AEC881C7AA381C7
+          938EE30929580C3712448392B3D150A4453242699E8D1B5569A560586AA4E596
+          737599918CC78109969818C9881D98CA6886E645326690009B0964A0CC9B542A
+          F3007B5B1E138105777254A59CE4D178CC032084856745320E98A89512C8B528
+          45551E93805F655E48D89C8A0AFA990512B4C89904804AEA695C703D106AA1E5
+          0D9801A0BD1DFF33E9445FC6F580089CB2689EA5B80EF8D9AC12551AD8002058
+          906972624500C27181011B51A38281BA268412902ADB63CE42542B5DA7FD9640
+          021148C0A767D93EB4AD7BA426501B64E53A742E98ED36F4EE96F13234AF95F5
+          2E74AFAF3BE6ABD0BD50FA9B10C04A0A8C10C1421A7C10C2FD9ECAE6580A1BC4
+          308D111734718B1513743189190FB471871D0BF4F185212F33F283259F5C60CA
+          0F87E970CB816609B3582CEBDAB0CC49B2C9F2CC317B99B3CE2FB7BC33ABF806
+          FDF0D036736C34D038CF5C33D1012F0DAFD4F4525D74D3300F9DB5D551632D34
+          D73FFFC6A2D65F7B7D34D809A37DB3CF3C937DB6D94CB3EDB4DA14D31D996CDA
+          B96DE0DD50F7FFDD29DC10B26AB3DE9AA646B86A03C2B502068CAF305ED2870F
+          06970A2E1C014C32982701830BA5246961E4625962820C98976EBA0C2694E0F7
+          DF727BF64208A6C76E7A082FFC06BA1527C8AE3BE6277851A3A7787FF6C21CBB
+          177FC22786535D02ECC5171F82EAEC526D42F3D43742AEC3FC2AA302E9D4171F
+          840AD1C37D4C16DD539F45F8723F7644F9CDC380FE98A8ADF003FBC5FF800197
+          A73E8601FDCDDF4F17D98AE35FF1FCE7B2A605667F02D41D012106BC24C92F81
+          B1A3C302696634B8C00082A6731FFEB016181760B0742E785F9A0CB4BD0F7E4F
+          8470F2CCF4306882EB014E19CB83E0F35CD83ABABC2077FC3B41ED6808BFD478
+          0187E53B8115FF7EF7C2BFBCAE7C2160846F0A5843C894C00441281EEAA047C4
+          267A8672474842E934E7022A868D8145840CE330B0B825F60D747E934BD258D7
+          C3B985B1607653DA1BD336C7B5B5716B75AC5B1E31164790F591647F44592057
+          36C8FCA0918E569CDA1EE558C33512D2805FB4E3083FE348432EAD92796B60F0
+          AEC6364C3EB2759E2CCF212599C2B6052D94D919A51E7DB6C9AA2DD28F1C4465
+          749056B644BAD2969CBC632D75F9B6F4ED72929144E41D6539CB53C68D97C704
+          261E71D93566C2B188A16C25055F09486A7A468D3C5466E156A7CAC05571981D
+          6A0FDEB476ADE8FC2953D2A4A52707B0276BCDA8503B13E7B4AE89AA3A45A037
+          B19A262BE912FF810C1CCB3C9F5195B156C3C649CA6500C7C840A40A34000964
+          A03DEACC40B72EF4808792E52FF1248B043845A28A82C5543873D49CB277A104
+          80A0590D94C0038849505BADAA673DB4C0B8941401ECB08C58BE62A9819605D3
+          11AA34981D52554F5368A787D9896513EDD3699EF630B8749391FFC18DCAF223
+          25143DC40F3C1BAA457A90D51E51E74725118F4EA3D30BDC5C640866B4521F9A
+          34902799D2AC2E190D5757B7A31E70E40F4DFDCC304663D5AC94641259A5C494
+          7E241020BC5348C16B83494ED2D7982061A42D4B001A8CD2D8AF2E83076138A8
+          9278131648D800AE1429C923E8BACD538016228C150817D814182EA4C4064468
+          19117850198CFF18F6614000890D88415AF7C0650D36A86C445AE117A0B6EA18
+          22D8837051BB8C3CB4349CCA68C17225C283218C752E43384C48F63255DA0060
+          07B5550C4F5C81A4E74AB3A5C788411C9452031CFCF371ABC301734EEB119504
+          230C7C9B0B22F420182278622D202A892F026188561EE712FC7A45013801E092
+          ECA4244630052A8A8B38582803044218C4841A8C1B9590E10EA41081317EE103
+          47D4C207722802191C1C5EBDD4B6248940401AB680852D1C40169B80C974ABD3
+          90001400013350042D46C106381800C0DE41C8650652804C80A2031D10C002AE
+          70E425D397340AF131026C11E50E2C4001474632447E7C000198F9CB6116B343
+          C86C66298359E7CD0F61F399DF0CE786C8D9CD69AEB342EE8C663D3384CF74F6
+          7342009D67411B84D0861E3402CA3CE742279AC98B6E739F1F7DE848379AD295
+          66349E315D1044731AD29A9EF4A797E1E95197FAD3A7E674AA31BD6A4AB7FAD1
+          AF4E74AC0D3D6B41D7DACFB7D673AEEBBC6B38F75ACDBF1673B0913C6C00177B
+          2D05D082A6671068542F3ACA0260B6A35DFDEC4B8F9AD4D5DEF4B5C90CED294F
+          1BD6D916B5B30F006D662BE1DAA456769BA58DEE45F02212521080140EB00A49
+          3C3AB502A983286EA18B59F0E10D5850C3A7AD6C594E2F79C77A66AC4FD0EDD7
+          6BFBC7E1E961B8C4274E7189070400
+        }
+        Proportional = True
+        Stretch = True
+      end
+      object Image2: TImage
+        Left = 624
+        Height = 454
+        Top = 0
+        Width = 114
+        AntialiasingMode = amOn
+        Align = alRight
+        Picture.Data = {
+          0954474946496D616765010B000047494638396147001C01F70000484848FEFE
+          FEBEBABB020202363636747474555555C8C4C53A3839030303514F50CBC7C828
+          27272625253E3E3E0404041D1C1C0606060707072C2B2B403F3F434242050505
+          1A1A1A1500000808081B1B1BFDFDFD434343BFBBBC363535404040090909F120
+          200A0A0A3B3B3B2D2C2C491616C43333FC0C0C3C3B3B3736364C17171801011C
+          1C1C818181AA32328B2C2CE02D2D4C4C4CFC0E0ECAC6C7494949F1F1F1F5F5F5
+          3F3F3F6E6E6E2726261D1D1DF2F2F2F4F4F44B4B4B0C0C0CFA1414979797FB0F
+          0F3D3D3D5050502A2A2A999999D9D9D9E12C2CC7C7C7F91313545454F3F3F3C2
+          C2C29E9E9E0F0F0F303030525252B9B9B9BCB8B99F9F9F6D6D6DC8C8C89D2F2F
+          504E4FABA9AAA93131393738B2AEAFA6A6A6BFBFBF9E30304A4A4A3C3C3C2929
+          29313131DADADAD1D1D10B0B0B5353537E7E7EC6C6C6C2C0C1ACACAC373737CC
+          C8C9989898424242E4E2E3525051EFEFEF282A29FD0B0BFA1212BABABA676767
+          9A9A9A828282808080020001CACACAE1DFE04F4F4F464646585858EBEBEB7272
+          726262628787874141415D5D5D121212CFCFCF010000797979C2BEBF6B6B6B8D
+          2C2CC632321311125A5A5A282828CCCACB4B494A707070717171191919451515
+          0002019292923B393A9090905B5B5BE9E9E9AAAAAAB4B4B48A2B2BC9C5C66363
+          63A5A5A5C1BDBE2E2E2E4D18188888885959593A3A3A7F7F7FD8D8D84644454E
+          4E4EC9C9C9F0F0F01111110001005E5E5E4E4C4DECEAEBC4C0C11F1D1EC6C4C5
+          FCFAFBABABAB0D0D0DE8E6E7EDEDED302E2F515151EAEAEA141213F91515B3B3
+          B34D4D4D575757383838CECECE201E1F0101011B1A1AFF0000000000FFFFFF00
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000002C00000000
+          47001C010008FF0097091C48B0A0C18308132A5CC8B0A1C38710234A9C48B1A2
+          C58B18336ADCC8B1A3C78F20438A5C164060C9911D4F465489F2614996075FB6
+          5CC852264D9333156E2089B366C1973073FEC4C99360D08147850ADC29101093
+          292D70D8A1D2A209935D43952654D58250A501CAC28A5536E0829B1646886A35
+          7A28949363CAE08E9D1BD689A062595B9EDC914A44DCBF72E98A855BE6CC92A2
+          4937B28CF2246C60C183E93E89A2766480004D22CC85FB18F2DFB011A620B5BC
+          ACC883CD9E238F95FBA0484E4D9D39A7A61B182EA6A221BB58800B56F5ECD416
+          BA8CAC21266CEFDFB31F8BA901B22415E4D021E3306AB16615CDD1B33B7E5085
+          2053893ECD38FFFEAC1DF263283D352289D0B97C6AB916902496B8B380E3F6EE
+          513B2E40D2E6C4931B08710C7EF909269710DF5DB49311B9DC572072C7F83006
+          47B810F8A07E7175C2111E1796D7C232095A544887DAC542D47C06C1248C8524
+          D2C50A462A0100588BB30170914A01C44023745F9CB812414AEC881C7AA381C7
+          938EE30929580C3712448392B3D150A4453242699E8D1B5569A560586AA4E596
+          737599918CC78109969818C9881D98CA6886E645326690009B0964A0CC9B542A
+          F3007B5B1E138105777254A59CE4D178CC032084856745320E98A89512C8B528
+          45551E93805F655E48D89C8A0AFA990512B4C89904804AEA695C703D106AA1E5
+          0D9801A0BD1DFF33E9445FC6F580089CB2689EA5B80EF8D9AC12551AD8002058
+          906972624500C27181011B51A38281BA268412902ADB63CE42542B5DA7FD9640
+          021148C0A767D93EB4AD7BA426501B64E53A742E98ED36F4EE96F13234AF95F5
+          2E74AFAF3BE6ABD0BD50FA9B10C04A0A8C10C1421A7C10C2FD9ECAE6580A1BC4
+          308D111734718B1513743189190FB471871D0BF4F185212F33F283259F5C60CA
+          0F87E970CB816609B3582CEBDAB0CC49B2C9F2CC317B99B3CE2FB7BC33ABF806
+          FDF0D036736C34D038CF5C33D1012F0DAFD4F4525D74D3300F9DB5D551632D34
+          D73FFFC6A2D65F7B7D34D809A37DB3CF3C937DB6D94CB3EDB4DA14D31D996CDA
+          B96DE0DD50F7FFDD29DC10B26AB3DE9AA646B86A03C2B502068CAF305ED2870F
+          06970A2E1C014C32982701830BA5246961E4625962820C98976EBA0C2694E0F7
+          DF727BF64208A6C76E7A082FFC06BA1527C8AE3BE6277851A3A7787FF6C21CBB
+          177FC22786535D02ECC5171F82EAEC526D42F3D43742AEC3FC2AA302E9D4171F
+          840AD1C37D4C16DD539F45F8723F7644F9CDC380FE98A8ADF003FBC5FF800197
+          A73E8601FDCDDF4F17D98AE35FF1FCE7B2A605667F02D41D012106BC24C92F81
+          B1A3C302696634B8C00082A6731FFEB016181760B0742E785F9A0CB4BD0F7E4F
+          8470F2CCF4306882EB014E19CB83E0F35CD83ABABC2077FC3B41ED6808BFD478
+          0187E53B8115FF7EF7C2BFBCAE7C2160846F0A5843C894C00441281EEAA047C4
+          267A8672474842E934E7022A868D8145840CE330B0B825F60D747E934BD258D7
+          C3B985B1607653DA1BD336C7B5B5716B75AC5B1E31164790F591647F44592057
+          36C8FCA0918E569CDA1EE558C33512D2805FB4E3083FE348432EAD92796B60F0
+          AEC6364C3EB2759E2CCF212599C2B6052D94D919A51E7DB6C9AA2DD28F1C4465
+          749056B644BAD2969CBC632D75F9B6F4ED72929144E41D6539CB53C68D97C704
+          261E71D93566C2B188A16C25055F09486A7A468D3C5466E156A7CAC05571981D
+          6A0FDEB476ADE8FC2953D2A4A52707B0276BCDA8503B13E7B4AE89AA3A45A037
+          B19A262BE912FF810C1CCB3C9F5195B156C3C649CA6500C7C840A40A34000964
+          A03DEACC40B72EF4808792E52FF1248B043845A28A82C5543873D49CB277A104
+          80A0590D94C0038849505BADAA673DB4C0B8941401ECB08C58BE62A9819605D3
+          11AA34981D52554F5368A787D9896513EDD3699EF630B8749391FFC18DCAF223
+          25143DC40F3C1BAA457A90D51E51E74725118F4EA3D30BDC5C640866B4521F9A
+          34902799D2AC2E190D5757B7A31E70E40F4DFDCC304663D5AC94641259A5C494
+          7E241020BC5348C16B83494ED2D7982061A42D4B001A8CD2D8AF2E83076138A8
+          9278131648D800AE1429C923E8BACD538016228C150817D814182EA4C4064468
+          19117850198CFF18F6614000890D88415AF7C0650D36A86C445AE117A0B6EA18
+          22D8837051BB8C3CB4349CCA68C17225C283218C752E43384C48F63255DA0060
+          07B5550C4F5C81A4E74AB3A5C788411C9452031CFCF371ABC301734EEB119504
+          230C7C9B0B22F420182278622D202A892F026188561EE712FC7A45013801E092
+          ECA4244630052A8A8B38582803044218C4841A8C1B9590E10EA41081317EE103
+          47D4C207722802191C1C5EBDD4B6248940401AB680852D1C40169B80C974ABD3
+          90001400013350042D46C106381800C0DE41C8650652804C80A2031D10C002AE
+          70E425D397340AF131026C11E50E2C4001474632447E7C000198F9CB6116B343
+          C86C66298359E7CD0F61F399DF0CE786C8D9CD69AEB342EE8C663D3384CF74F6
+          7342009D67411B84D0861E3402CA3CE742279AC98B6E739F1F7DE848379AD295
+          66349E315D1044731AD29A9EF4A797E1E95197FAD3A7E674AA31BD6A4AB7FAD1
+          AF4E74AC0D3D6B41D7DACFB7D673AEEBBC6B38F75ACDBF1673B0913C6C00177B
+          2D05D082A6671068542F3ACA0260B6A35DFDEC4B8F9AD4D5DEF4B5C90CED294F
+          1BD6D916B5B30F006D662BE1DAA456769BA58DEE45F02212521080140EB00A49
+          3C3AB502A983286EA18B59F0E10D5850C3A7AD6C594E2F79C77A66AC4FD0EDD7
+          6BFBC7E1E961B8C4274E7189070400
+        }
+        Proportional = True
+        Stretch = True
+      end
+      object LockLabel: TStaticText
+        Left = 114
+        Height = 262
+        Top = 192
+        Width = 510
+        Align = alCustom
+        Alignment = taCenter
+        Caption = 'Nie wolno podglądać!'
+        TabOrder = 0
+      end
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    left = 224
+    top = 426
+  end
+end

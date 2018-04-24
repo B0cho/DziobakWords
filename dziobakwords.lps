@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="18">
+      <Unit0>
+        <Filename Value="dziobakwords.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="14" Y="7"/>
+        <UsageCount Value="203"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="1013"/>
+        <CursorPos X="18" Y="1023"/>
+        <UsageCount Value="203"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="unit2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Unit2"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="12"/>
+        <CursorPos X="54" Y="35"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="wordsbase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="161"/>
+        <CursorPos X="118" Y="30"/>
+        <UsageCount Value="190"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="166"/>
+        <CursorPos X="33" Y="80"/>
+        <UsageCount Value="129"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="verbsbase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="160"/>
+        <CursorPos X="40" Y="46"/>
+        <UsageCount Value="126"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="idiomsbase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="38" Y="120"/>
+        <UsageCount Value="117"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="ctasksbase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CtasksBase"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="253"/>
+        <CursorPos X="60" Y="43"/>
+        <UsageCount Value="87"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="task.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TaskForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="515"/>
+        <CursorPos X="55" Y="407"/>
+        <UsageCount Value="86"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\lcl\include\notebook.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="142"/>
+        <CursorPos Y="154"/>
+        <UsageCount Value="6"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11727"/>
+        <CursorPos Y="11739"/>
+        <UsageCount Value="8"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\lcl\include\graphic.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="230"/>
+        <CursorPos Y="242"/>
+        <UsageCount Value="8"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2819"/>
+        <CursorPos Y="2829"/>
+        <UsageCount Value="8"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\lcl\extendedstrings.pas"/>
+        <UnitName Value="ExtendedStrings"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="179"/>
+        <CursorPos Y="193"/>
+        <UsageCount Value="6"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2706"/>
+        <CursorPos Y="2718"/>
+        <UsageCount Value="8"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2723"/>
+        <CursorPos Y="2734"/>
+        <UsageCount Value="8"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\dateutils.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="28"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\dateutil.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="298"/>
+        <CursorPos X="54" Y="98"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+    </Units>
+    <JumpHistory Count="29" HistoryIndex="28">
+      <Position1>
+        <Filename Value="task.pas"/>
+        <Caret Line="267" Column="15" TopLine="253"/>
+      </Position1>
+      <Position2>
+        <Filename Value="task.pas"/>
+        <Caret Line="268" Column="15" TopLine="254"/>
+      </Position2>
+      <Position3>
+        <Filename Value="task.pas"/>
+        <Caret Line="290" Column="28"/>
+      </Position3>
+      <Position4>
+        <Filename Value="task.pas"/>
+        <Caret Line="272" Column="22" TopLine="260"/>
+      </Position4>
+      <Position5>
+        <Filename Value="task.pas"/>
+        <Caret Line="281" Column="42" TopLine="269"/>
+      </Position5>
+      <Position6>
+        <Filename Value="task.pas"/>
+        <Caret Line="282" Column="29" TopLine="270"/>
+      </Position6>
+      <Position7>
+        <Filename Value="task.pas"/>
+        <Caret Line="288" Column="80" TopLine="268"/>
+      </Position7>
+      <Position8>
+        <Filename Value="task.pas"/>
+        <Caret Line="120" TopLine="108"/>
+      </Position8>
+      <Position9>
+        <Filename Value="task.pas"/>
+        <Caret Line="160" Column="30" TopLine="153"/>
+      </Position9>
+      <Position10>
+        <Filename Value="task.pas"/>
+        <Caret Line="317" Column="16" TopLine="295"/>
+      </Position10>
+      <Position11>
+        <Filename Value="task.pas"/>
+        <Caret Line="330" Column="16" TopLine="308"/>
+      </Position11>
+      <Position12>
+        <Filename Value="task.pas"/>
+        <Caret Line="199" Column="13" TopLine="178"/>
+      </Position12>
+      <Position13>
+        <Filename Value="task.pas"/>
+        <Caret Line="352" Column="61" TopLine="333"/>
+      </Position13>
+      <Position14>
+        <Filename Value="task.pas"/>
+        <Caret Line="355" Column="32" TopLine="323"/>
+      </Position14>
+      <Position15>
+        <Filename Value="task.pas"/>
+        <Caret Line="364" Column="32" TopLine="342"/>
+      </Position15>
+      <Position16>
+        <Filename Value="task.pas"/>
+        <Caret Line="418" TopLine="407"/>
+      </Position16>
+      <Position17>
+        <Filename Value="task.pas"/>
+        <Caret Line="416" Column="3" TopLine="407"/>
+      </Position17>
+      <Position18>
+        <Filename Value="task.pas"/>
+        <Caret Line="418" TopLine="406"/>
+      </Position18>
+      <Position19>
+        <Filename Value="task.pas"/>
+        <Caret Line="373" Column="13" TopLine="311"/>
+      </Position19>
+      <Position20>
+        <Filename Value="task.pas"/>
+        <Caret Line="391" Column="65" TopLine="377"/>
+      </Position20>
+      <Position21>
+        <Filename Value="task.pas"/>
+        <Caret Line="230" Column="23" TopLine="218"/>
+      </Position21>
+      <Position22>
+        <Filename Value="wordsbase.pas"/>
+        <Caret Line="46" Column="33" TopLine="30"/>
+      </Position22>
+      <Position23>
+        <Filename Value="task.pas"/>
+        <Caret Line="395" Column="30" TopLine="384"/>
+      </Position23>
+      <Position24>
+        <Filename Value="task.pas"/>
+        <Caret Line="396" TopLine="387"/>
+      </Position24>
+      <Position25>
+        <Filename Value="task.pas"/>
+        <Caret Line="403" TopLine="387"/>
+      </Position25>
+      <Position26>
+        <Filename Value="task.pas"/>
+        <Caret Line="406" Column="133" TopLine="387"/>
+      </Position26>
+      <Position27>
+        <Filename Value="task.pas"/>
+        <Caret Line="402" Column="33" TopLine="387"/>
+      </Position27>
+      <Position28>
+        <Filename Value="task.pas"/>
+        <Caret Line="428" Column="29" TopLine="412"/>
+      </Position28>
+      <Position29>
+        <Filename Value="ctasksbase.pas"/>
+        <Caret Line="8" Column="36"/>
+      </Position29>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
